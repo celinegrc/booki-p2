@@ -1,6 +1,6 @@
 body {
-    max-width: 1400x;
-    margin: 0px;
+    max-width: 1400px;
+    margin: auto;
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
 }
@@ -144,7 +144,7 @@ form {
 
 .filters_list{
     display:flex;
-    /*flex-wrap: wrap; */         /*Espacer les boutons quand on passe en colonne*/
+    
 }
 
 .filters_button{
@@ -152,7 +152,6 @@ form {
     align-items:center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    /*height:50px;*/
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom:0px;
@@ -239,8 +238,7 @@ form {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     display:flex; 
     background-color:white;
-    margin-bottom:20px;
-    margin: 0px 20px 20px 20px; 
+    margin: 0px 10px 20px 10px; 
 }
 
 .popular_card img{
@@ -261,7 +259,7 @@ form {
     padding-top: 10px;
     padding-bottom:10px;
     padding-right:20px;
-    width:206px;
+    /*width:206px;*/
 }
 
 .header_popular{
@@ -317,11 +315,11 @@ form {
 }
 .activity_card img{
     width: 100%;
-    height: 90%;
+    height: 85%;
     border-radius: 20px 20px 0px 0px;
     box-sizing:border-box;
     object-fit: cover;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 .activity_container{
     display:flex;
@@ -340,7 +338,7 @@ form {
     background-color: #F2F2F2;
     margin:50px 50px 0px 50px;   
 }
-.footer_content ul{      /*supprimer le décalage des listes à puces*/
+.footer_content ul{      /*supprime le décalage des listes à puces*/
     padding-left:0px;
 }
 .footer_content ul li{
