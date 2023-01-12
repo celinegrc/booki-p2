@@ -4,7 +4,7 @@ body {
     margin:auto; 
 }
 .bloc_page{
-    margin:0px 30px 0px 30px;
+    margin:0px 30px;
 }
 i{
     color: #0065FC;
@@ -22,7 +22,7 @@ ul{
 h2{
     font-size:22px;
     font-weight:700;
-    padding-left:20px;
+    margin-left:10px;
 }
 h3{
     font-size:16px;
@@ -36,8 +36,7 @@ img{
     display:flex;
     justify-content: space-between;
     align-items: baseline;
-    height:100px;
-  }
+}
 .logo_img{
     width: 61px;
     height: 19px;  
@@ -49,7 +48,7 @@ img{
     display:flex;
 }
 .menu_li{  
-    width:162px;
+    width:165px;
     text-align:center;
     padding-top:42px;
 }
@@ -73,21 +72,24 @@ h1{
     font-size:22px;
     font-weight:700;
     margin-bottom:0px;
-    margin-top:0px;
 }
 p{
     font-size:16px;
     font-weight:400;
     margin-top: 10px;
 }
-
+form {
+    display:flex;
+    margin-bottom: 30px;
+}
 label {
     background-color: #f0ebebed;
     border-radius: 15px 0px 0px 15px;
-    padding: 16px 17px 14px 18px;
+    padding: 15px 17px 15px 17px;
 }
 .fa-location-dot{
     color:black;
+    font-size:18px;
 }
 input {
     font-weight: 700;
@@ -113,11 +115,11 @@ input {
     border:none;
     border-radius:0px 15px 15px 0px;
 }
-form {
+.filters{
     display:flex;
-    margin-bottom: 30px;
+    align-items:baseline;
+    margin-bottom: 25px;
 }
-
 .filters_part{
     display:flex;      
 }
@@ -125,11 +127,6 @@ form {
     font-size:18px;
     font-weight: 700;
     margin-right:30px;
-}
-.filters{
-    display:flex;
-    align-items:baseline;
-    margin-bottom: 25px;
 }
 .filters_list{
     display:flex;   
@@ -139,11 +136,9 @@ form {
     align-items:center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom:0px;
+    padding:0 20px;
     margin-right: 20px;
-    white-space: nowrap;            
+    white-space: nowrap;       
 }
 .filters_button p {
     font-size: 17px;
@@ -158,10 +153,9 @@ form {
     background-color: #deebff;
     cursor: pointer;
 }
-
 .fa-info {
     border: solid 2px #f0ebebed;
-    padding: 11px 10px 11px 10px;
+    padding: 11px 10px;
     border-radius: 50%;
     margin-right: 10px;  
 }
@@ -170,7 +164,6 @@ form {
     align-items:baseline;
     margin-bottom:20px;
 }
-
 .home_card, .popular_card, .activity_card{
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -186,15 +179,12 @@ form {
     font-weight:600;
 }
 .home_card {
-    width:30%;   
+    width:30%;
+    min-width:186px;  
     height:199px;
     background-color: #FFFFFF;
-    display:flex;
-    flex-direction: column;
-    /*justify-content: space-around;*/
     margin-bottom:20px; 
 }
-
 .home_card img {
     width: 100%;
     height: 124px;
@@ -213,28 +203,29 @@ form {
 .fa-grey {
     color:#F2F2F2;
 }
-
 #view_more{
     font-size:18px;
     font-weight: 700;
-    padding-left:20px;
-    padding-top:10px;
+    margin-left:20px;
+    margin-top:10px;
+}
+.header_popular{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    padding-right:10px;
+}
+.popular_card{
+    height: 144px;
+    background-color:white;
+    margin: 0px 10px 20px 10px; 
 }
 .popular_flex_container{
     display:flex;
 }
-.popular_card{
-    height: 144px;
-    display:flex; 
-    background-color:white;
-    margin: 0px 10px 20px 10px; 
-}
-
-.popular_card a {
-    width: 100%;
-}
 .popular_flex_container img{
     width: 40%;
+    height: 144px;
     border-radius: 20px 0px 0px 20px;
     border: 5px solid white;
     object-fit: cover; 
@@ -246,16 +237,9 @@ form {
     padding-top: 10px;
     padding-right:20px;
 }
-.header_popular{
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    padding-right:20px;
-}
 .header_popular h2{
     margin-right:10px;
 }
-
 .home_and_popular{
     display:flex;
     justify-content: space-between;
@@ -280,21 +264,17 @@ form {
 .popular{
     width:28%;   
 }
-
 .activity_card{
-    height: 440px; 
+    height: 440px;
+    width:22%;  
 }
 .activity h2{
-    padding-left:0px;
-}
-.activity_container a{
-    width:22%;  
+    margin-left:0px;
 }
 .activity_card img{
     width: 100%;
     height:85%;
     border-radius: 20px 20px 0px 0px;
-
     object-fit: cover;
     margin-bottom:10px;
 }
@@ -303,42 +283,42 @@ form {
     justify-content:space-between;
     margin-bottom:50px; 
 }
-
 .footer_container{
-    display:flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width:100%;
+    height:225px;
     background-color: #F2F2F2; 
 }
 .footer_content ul li{
-    line-height: 30px;
+    line-height: 2;
+ }
+ .footer_part h4{
+    margin-bottom: 15px;
  }
 .footer_content{
-   padding:2% 0% 5% 5%;
-    width:100%;
+    height:100%;
+    width:80%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
 }
-
-@media screen and (max-width: 992px) and (min-width: 768px){
+@media screen and (max-width: 992px) and (min-width: 769px){
 
     .home_and_popular{
         display:block;
     }
     .home, .popular{
-        width: 95%;
+       width:100%;
         margin-bottom:50px;
+        box-sizing:border-box;
     }
     .filters span {
         margin-right:5px;
     }
     .filters_button{
         margin-right: 10px;
-        padding-left:10px;
-        padding-right:10px;            
+        padding:0 10px;            
     }
-    .filters ul{
-        padding-left:10px;   
-    }
-        .popular_rooms{
+    .popular_rooms{
         display:flex;
         justify-content:space-between;
     }
@@ -346,11 +326,7 @@ form {
         font-size:13px;
     }
     .popular_card{
-        width:30%;
-    }
-    .popular_article_content{
-        padding-right:5px;
-        padding-top:5px; 
+       width:30%;
     }
     .activity_card{
         height: 267px;   
@@ -359,14 +335,9 @@ form {
         height:75%;
     }
 }
-
 @media screen and (max-width: 768px){
-
     .bloc_page{
-        margin:0px;
-    }
-    .search{
-        margin-left:20px; 
+        margin:0px; 
     }
     .logo_img{
      margin:auto;
@@ -374,25 +345,46 @@ form {
     .header_container{
         display:block;
     }
-    
+    .menu_li{  
+        border-bottom:3px solid #F2F2F2;
+        padding-bottom:20px;
+    }
+    .menu_li:hover{
+        border-top:none;
+        border-color: #0065FC;
+    }
+    .header_container{
+        margin:30px 0px 20px 0px;
+    }
+    .menu_li{  
+        width:50%;
+        text-align:center;
+    }
+    .search{
+        margin-left:20px;
+    }
+    h1{
+        margin-right:20px;
+    }
+    .filters{
+        display:block;
+    }
     .filters_list{
         display:block;
     }
     .filters_part{
         margin:10px 0px;
     }
-    .filters{
-        display:block;
-    }
     .filters_button p{
         font-size:11px;
+        margin-left:5px;
     }
     .filters_button {
         width:50%;
         margin-right:10px;
     }
     input { 
-        width:230px;
+        min-width:160px;
     }
     #search_mobile {
         display:block;
@@ -403,75 +395,78 @@ form {
     }
     #search_mobile i{
         color:white;
-        padding:10px 10px 10px 10px;
+        padding:10px;
         font-size:15px;   
     }
     #search_desktop{
         display:none;
     }
-    .menu_li{  
-        border-bottom:solid 3px #F2F2F2;
-        padding-bottom:20px;
-    }
-    .menu_li:hover{
-        border-top:none;
-        border-bottom:3px #0065FC solid;
-    }
-    .header_container{
-        width:100%;
-        margin:30px 0px 20px 0px;
-    }
-    .menu{
-        padding-left:0px;
-        width:100%;
-    }
-    .menu_li{  
-        width:50%;
-        text-align:center;
-    }
     .filters_button{
-        padding-left:10px;
-        padding-right:10px;            
-    }
-    .home_and_popular{
-    flex-direction: column-reverse;   /* TO DO mettre les margins left right à la div*/
-    }
-    .popular, .home, .activity{
-        border-radius:0px;
-        padding-left:20px;
-        padding-right:20px;
-        width:90%;
-        margin:auto;
+        padding:0 5px 0 10px;
+        white-space:normal;           
     }
     .home{
-        background-color:white; 
-    }
-    .home_card, .activity_card{
-        margin: 0px 10px 20px 10px;       
-    }
-    .home_card {
-        width:auto;
-    }
-
-    .home_cards_container{
-        display:block; 
-    }
-    .activity_card img{
-        height:75%;
+        background-color:white;
     }
     #view_more{
         display:none;
     }
-    .activity_container{
-        display:block;
+    .home_and_popular{
+    flex-direction: column-reverse;
+    margin-bottom:10px;
+    }
+    .home, .activity{
+        border-radius:0px;
+        width:100%;
+        box-sizing:border-box;
+    }
+    .activity{
+       padding:20px;
+    }
+    .home_card, .activity_card{
+        margin-bottom:20px ;
+        width:100%;
+        box-sizing:border-box;    
+    }
+    .home_cards_container{
+        display:block; 
+    }
+    .home h2{
+        margin-top:0px;
+    }
+    .popular{
+        width:100%;
+        border-radius:0px;
+        box-sizing: border-box;
+    }
+    .popular_card{
+        width:100%;
+        margin:15px 0;
+        box-sizing:border-box;
+    }
+    .popular_rooms{
+        width:100%;
+    }
+    .header_popular{
+        width:100%;
     }
     .activity_card{
         height:190px;
     }
+    .activity_card img{
+        height:134px;
+    }
+    .activity_container{
+        display:block;
+    }
     .footer_container{
-        flex-direction:column;
+        height:auto;
     }
     .footer_content{
-        padding:2% 1% 0% 8%;
+        display:block;
+        padding:30px;
+    }
+    .footer_part{
+        margin-bottom:40px;
     }
 }
