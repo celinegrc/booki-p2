@@ -1,4 +1,6 @@
-# # Projet 2 de la formation Développeur WEB OPENCLASSROOMS: Créez la page d'accueil d'une agence de voyage avec HTML et CSS
+# Booki : Créez la page d'accueil d'une agence de voyage avec HTML et CSS
+## Projet 2 de la formation Développeur WEB OpenClassrooms:
+
 **Compétences cibles du projet:**
 
 - Versionner son projet avec Git et Github<br>
