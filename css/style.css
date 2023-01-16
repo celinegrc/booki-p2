@@ -114,6 +114,7 @@ input {
     background-color: #0065fc;
     border:none;
     border-radius:0px 15px 15px 0px;
+    cursor:pointer;
 }
 .filters{
     display:flex;
@@ -301,7 +302,7 @@ input {
     justify-content:space-around;
     align-items:center;
 }
-@media screen and (max-width: 992px) and (min-width: 769px){
+@media screen and (max-width: 991px) and (min-width: 768px){
 
     .home_and_popular{
         display:block;
@@ -335,7 +336,7 @@ input {
         height:211px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .bloc_page{
         margin:0px; 
     }
@@ -392,6 +393,7 @@ input {
         border:none;
         background-color: #0065fc;
         border-radius:0px 15px 15px 0px;
+        cursor:pointer;
     }
     #search_mobile i{
         color:#ffffff;
